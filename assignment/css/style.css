@@ -1,0 +1,204 @@
+body {
+    padding: 0;
+    overflow: hidden;
+    font-family: Abel;
+    color: white;
+}
+
+p.main {
+  font-size: 14px;
+}
+
+.map {
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    height: 100%;
+}
+
+.sidebar {
+    position: absolute;
+    left: 0px;
+    width: 300px;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    z-index: 1;
+    opacity: 0.6;
+    background-color: black;
+}
+
+h1 {
+	font-size: 75px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 60px;
+}
+h3 {
+	font-size: 36px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 34px;
+}
+h4 {
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	line-height: 16px;
+}
+
+h5 {
+	font-size: 8px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	line-height: 10px;
+}
+
+p {
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 14px;
+}
+
+pre {
+  overflow-y: hidden;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+.header {
+  font-family: Oswald;
+  color: white;
+  font-size: 60px;
+}
+
+.miniheader {
+  font-family: Oswald;
+  color: white;
+  font-size: 14px
+}
+
+
+.subheader {
+  font-family: Oswald;
+  color: white;
+  font-size: 36px;
+}
+
+.luyb {
+  font-family: Abel;
+  color: white;
+  font-size: 16px;
+}
+
+.asterisk {
+  font-family: Abel;
+  color: white;
+  font-size: 10px;
+}
+
+.tiny {
+  font-family: Abel;
+  color: white;
+  font-size: 8px;
+}
+
+
+.main {
+  font-family: Abel;
+  color: white;
+}
+
+.resetbtn{
+  font-family: Cabin;
+  border-radius: 10px;
+  width: 35px;
+  height:35px;
+  font-weight: bold;
+  font-size: 14px;
+  color:#778fa7;
+  background: rgba(0,0,0,0);
+  border: solid 4px #778fa7;
+}
+
+.resetbtn:hover {
+  border-radius: 10px;
+  border-color:#44d3ff;
+  color: #44d3ff;
+}
+
+
+
+.btn{
+  font-family: Oswald;
+  border-radius: 15px;
+  width: 85px;
+  height:50px;
+  font-weight: light;
+  font-size: 16px;
+  color:#778fa7;
+  background: rgba(0,0,0,0);
+  border: solid 4px #778fa7;
+}
+
+.btn:hover {
+  border-radius: 15px;
+  border-color:#44d3ff;
+  color: #44d3ff;
+}
+
+#prevButton{
+  position:absolute;
+  bottom:5%;
+  left:15%;
+}
+
+#nextButton{
+  position:absolute;
+  bottom:5%;
+  left:55%;
+}
+
+.dropdown {
+    display: inline-block;
+    font-size: 18px;
+    overflow:hidden;
+    width:200px;
+    height:35px;
+    opacity:0.3
+}
+
+#ctdropdown {
+    background-color: #999;
+    padding: 2px;
+    opacity: .5;
+}
+
+
+.legend {
+  position: absolute;
+  background-color: rgba(0,0,0,0) ;
+  z-index: 2000;
+  width: 200px;
+  right: 0;
+  color: #ffffff
+}
+
+.legend_colorblock {
+  display: inline-block;
+  width: 21px;
+  height: 14px;
+}

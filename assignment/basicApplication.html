@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel='stylesheet' type='text/css'>
+
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Start HTML -->
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div id="slideOne">
+        <center><img src="icon_flood.png" height="100" width="100"></center>
+        <h1 class="header">HELL OR HIGH WATER</h1>
+        <p class="main">the  national flood insurance program (NFIP)
+        is a federal insurance program managed by FEMA to
+        reduce the impact of flooding on private and public structures. </p>
+
+        <!--  by providing relatively affordable flood insurance to property owners,
+                enforcing floodplain management regulations, and encouraging
+                communities to adopt flood mitigation measures. -->
+
+      <p class="main"> despite the fact that a significant portion of new york city is
+        exposed to flood risk*, reports estimate that less than 20% of residential
+        buildings in areas inundated by hurricane sandy in 2012 had NFIP coverage. </p>
+
+        <p class="asterisk">*located within the FEMA 100-year floodpain (map) </p>
+
+      </div>
+
+      <div id = "slideTwo">
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+      <h3 class="subheader">ROCKAWAY, QUEENS</h3>
+      <p class = "main"> displayed on the map is the rockaway peninsula,
+        a 11-mile community located in the borough of queens in new york city.
+        it contains a range of different building types including single-family homes,
+        town houses and high rises (including affordable and public housing).
+        rockaway was severely impacted by hurricane sandy -
+        which really shouldn't be surprising given its location along the coast,
+        and the fact that almost the entire peninsula is located within the FEMA-designated floodplain
+        (as seen on the map). </p>
+
+    </div>
+    <div id = "slideThree">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h3 class="subheader">ROCKAWAY, QUEENS</h3>
+      <p class="main">select from the drop down below for distributions in rockaway peninsula.</p>
+      <select class = "dropdown" id="ctdropdown">
+  <option value="blank">select</option>
+  <option value="hu">housing units</option>
+  <option value="lowinc">income below $20,000</option>
+  <option value="nfiptu">NFIP take-up rates</option>
+  <option value="premium">average premium per $1000 coverage</option>
+</select>
+
+<br>
+<br>
+<br>
+
+<div class="legend"></div>
+  <div>
+    <div class = "legend_colorblock" style='background: #e5c5c0;'></div>
+    <label id="lb1">lowest</label>
+  </div>
+  <div>
+    <div class = "legend_colorblock" style='background: #cd8b87;'></div>
+    <label id="lb2"></label>
+  </div>
+  <div>
+    <div class = "legend_colorblock" style='background: #b65256;'></div>
+    <label id="lb3"></label>
+  </div>
+  <div>
+    <div class = "legend_colorblock" style='background: #a11035;'></div>
+  <label id="lb4">highest</label>
+  </div>
+
+    </div>
+
+    <div id = "slideFour">
+      <br>
+      <br>
+      <br>
+      <br>
+      <input type="button" class = "resetbtn" value = "X"></input>
+      <h3 class="subheader">ROCKAWAY, QUEENS</h3>
+      <p class="main">explore rockaway peninsula: click on the individual parcels** for more info, or click x to reset map</p>
+      <p class="asterisk">**please wait a few seconds for data to load...</p>
+      <br>
+      <br>
+      <p class="main">parcel info:</p>
+      <h4 class="luyb" id="results1"><span class="lu">[land use]</span></h4>
+      <h4 class="luyb" id="results2"><span class="yb">[median year built]</span></h4>
+    <br>
+    </div>
+
+    <div id = "slideFive">
+
+      <br>
+
+    <h3 class="subheader">ROCKAWAY, QUEENS</h3>
+    <p class = "main"> rockaway was devastated by hurricane sandy in october 2012.
+      thousands of houses were damaged or destroyed by high water; particularly properties with basements.
+      in addition, floodwater had caused fires in many areas in rockaway by contacting electrical wires or starting of vehicles.
+      the fires were exacerbated by the flooding, which obstructed firefighters' access to those areas.
+      the FDNY reported 130 homes burned to the ground and many others damaged by the fires.</p>
+
+      <p class = "main">the land use in rockaway comprises primarily of lower-density residential
+      buildings including one- and two-family homes and multi-family walkup buildings.
+      these building types make up over 80% of land uses in the rockaway area, with
+      the rest ranging from mixed-use, commercial, to multi-family elevator buildings.</p>
+
+      <p class="asterisk">*residential land uses in rockaway peninsula (map)</p>
+
+
+      <h5 class="tiny">// sources: nyc open data, mappluto, fema, nyc planning,
+        wharton risk management and decision processes center, huffpo, chicago tribune, cnn</h5>
+
+  </div>
+
+<br>
+
+    <div id="PNbuttonz">
+      <input type="button" id="prevButton" class = "btn" value="<< BACK"></input>
+      <input type="button" id="nextButton" class = "btn" value = "NEXT >>"></input>
+    </div>
+
+
+        <!-- Sidebar -->
+      </div>
+    </div>
+    <!-- Map -->
+    <div id="map" class="map"></div>
+    <!-- End HTML -->
+    <!-- Start Javascript Imports -->
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/midtermFunctions.js"></script>
+    <!-- End Javascript Imports -->
+  </body>
+
+</html>
